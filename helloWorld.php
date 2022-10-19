@@ -36,11 +36,11 @@
 	$listem = ["balikesir","Bursa","Kütahya","MAnisa"];
 	$a = 0;
 	
-	for ($i =0;$i <=3;$i++){
+	for ($i =0;$i <count($listem);$i++){
 		echo "<br>$listem[$i]";
 	}
 	echo "<p><b>While Döngüsü</b><br>";
-	while ($a<=3){
+	while ($a<count($listem)){
 		echo "<br>$listem[$a]";
 		$a++;
 	}
@@ -50,7 +50,7 @@
 		echo "<br>$listem[$a]";
 		$a++;
 	}
-	while ($a<=3);
+	while ($a<count($listem));
 	echo "<p><b>Foreach Döngüsü</b><br>";;
 	foreach($listem as $item){
 		echo "<br> $item";

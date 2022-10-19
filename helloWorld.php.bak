@@ -24,10 +24,35 @@
 	echo "<br>",strpos("Hellom aqua blue ","aqua"); //Yazdığım kelime kaçıncı karakterden başlıyor.
 	
 	
-	$metin = "Ötükende cenk olur Ötürkende cenk olur yiğitleri mert olur";
+	$metin = "Ötükende cenk olur Ötükende cenk olur yiğitleri mert olur";
 	$aranan = "Ötükende";
 	$yenideger = "savas";
 	
 	
 	echo str_replace($aranan,$yenideger,$metin);	//yer değiştirme 
+	echo "<p><h3>DÖNGÜLER</h3><br>";
+
+	
+	$listem = ["balikesir","Bursa","Kütahya","MAnisa"];
+	$a = 0;
+	
+	for ($i =0;$i <=3;$i++){
+		echo "<br>$listem[$i]";
+	}
+	echo "<p><b>While Döngüsü</b><br>";
+	while ($a<=3){
+		echo "<br>$listem[$a]";
+		$a++;
+	}
+	$a = 0;
+	echo "<p><b>Do-While Döngüsü</b><br>";
+	do{
+		echo "<br>$listem[$a]";
+		$a++;
+	}
+	while ($a<=3);
+	echo "<p><b>Foreach Döngüsü</b><br>";;
+	foreach($listem as $item){
+		echo "<br> $item";
+	}
 ?>
