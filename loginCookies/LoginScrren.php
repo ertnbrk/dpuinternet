@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+
+
+
+
     <div class="container">
         <div class="header">
             <div class="navbar">
@@ -26,7 +30,7 @@
                             <label for="klnciAdi">Kullanıcı Adı:</label>
                         </td>
                         <td>
-                            <input type="text" id="klnciAdi" name="klnciAdi" placeholder="Kullanıcı Adını gir">
+                            <input type="text" id="klnciAdi" name="klnciAdi">
                         </td>
                     </tr>
                     <tr>
@@ -34,8 +38,8 @@
                             <label for="sifre">Şifre:</label>
                         </td>
                         <td>
-                            <input type="text" id="sifre" name="passw"
-                            placeholder="Şifreni gir">
+                            <input type="text" id="passw" name="passw"
+                            >
                         </td>
                     </tr>
                     <tr>
@@ -52,7 +56,7 @@
 
             <div class="registerDiv">
             
-            <form action="#" class="registerForm">
+           <!-- <form action="#" class="registerForm">
             <table>
                     <tr>
                         <td>
@@ -77,7 +81,7 @@
                         
                     </tr>
                 </table>
-                
+                -->
                 
                 </form>
             </div>
@@ -86,5 +90,14 @@
 
         </div>
     </div>
+
+
+    <?php
+include "loginScreenBackend.php";
+
+
+
+
+?>
 </body>
 </html>
