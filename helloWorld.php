@@ -33,9 +33,16 @@
 	echo "<p><h3>DÖNGÜLER</h3><br>";
 
 	
+
+
+
+	
 	$listem = ["balikesir","Bursa","Kütahya","MAnisa"];
 	$a = 0;
 	
+	$listem[] = "Yeni Eleman";	//Listeye ekleme işlemi
+
+
 	for ($i =0;$i <count($listem);$i++){
 		echo "<br>$listem[$i]";
 	}
@@ -52,7 +59,35 @@
 	}
 	while ($a<count($listem));
 	echo "<p><b>Foreach Döngüsü</b><br>";;
-	foreach($listem as $item){
-		echo "<br> $item";
+	foreach($listem as $key => $item){//bu şekilde listemin index numaraları key'e itemlerde $item'e aktarılır.
+		echo "<br> $item<br>";
+		echo $key;	//İndex numaraları
 	}
+
+
+	function welcome(){
+		echo "Sitemize Hoşgeldiniz</br>";
+	}
+
+	welcome();
+	
+	
+	function faktoriyel1($a){
+		
+	while ($a>1){
+		$yeni=$yeni*$a;
+		$a--;
+	}
+	return $yeni;
+	}
+	//todo	BURASI KENDİ KENDİNİ ÇAĞIRAN FONKSİYONDUR
+	function faktoriyel2($a){
+		if ($a ==1){
+			return 1;
+		}
+		else{
+			return $a*faktoriyel2($a-1);	//? 	EĞER 1 DEN FARKLIYSA SAYININ 1 EKSİĞİYLE ÇARP
+		}
+	}
+	
 ?>
